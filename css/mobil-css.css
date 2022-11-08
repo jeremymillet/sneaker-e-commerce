@@ -1,7 +1,13 @@
 .left {
     display: none
 }
-
+@media (min-width: 1440px) {
+    html{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
 /* header*/
 .nav {
     display: none;
@@ -536,7 +542,7 @@ body {
         display: flex;
         justify-content: center;
         width: 50%;
-        margin-top: 5%;
+        margin-top: 2%;
         flex-direction: column;
 
     }
