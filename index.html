@@ -12,15 +12,16 @@
     </style>
     <title>sneaker</title>
 </head>
+
 <body>
     <header>
         <div class="nav-mobile">
             <button onclick="ouvrir3()">
-                <img src="/images/icon-menu.svg" alt="">
+                <img src="images/icon-menu.svg" alt="">
             </button>
         </div>
         <div class="logo">
-            <img src="/images/logo.svg" alt="logo de la boutique sneakers">
+            <img src="images/logo.svg" alt="logo de la boutique sneakers">
         </div>
         <div class="nav">
             <ul role="list">
@@ -45,19 +46,19 @@
             <img class="panier2" src="images/icon-cart.svg" alt="cart icon">
         </div>
         <div class="profil">
-            <a href=""><img src="/images/image-avatar.png" alt=""></a>
+            <a href=""><img src="images/image-avatar.png" alt=""></a>
         </div>
     </header>
     <main>
         <div class="left">
             <div class="photo1">
-                <img onclick="ouvrir2(),afficheimg1()" src="/images/image-product-1.jpg" alt="">
+                <img onclick="ouvrir2(),afficheimg1()" src="images/image-product-1.jpg" alt="">
             </div>
             <ul class="listphoto">
-                <li><img onclick="ouvrir2(),afficheimg1()" src="/images/image-product-1-thumbnail.jpg" alt=""></li>
-                <li><img onclick="ouvrir2(),afficheimg2()" src="/images/image-product-2-thumbnail.jpg" alt=""></li>
-                <li><img onclick="ouvrir2(),afficheimg3()" src="/images/image-product-3-thumbnail.jpg" alt=""></li>
-                <li><img onclick="ouvrir2(),afficheimg4()" src="/images/image-product-4-thumbnail.jpg" alt=""></li>
+                <li><img onclick="ouvrir2(),afficheimg1()" src="images/image-product-1-thumbnail.jpg" alt=""></li>
+                <li><img onclick="ouvrir2(),afficheimg2()" src="images/image-product-2-thumbnail.jpg" alt=""></li>
+                <li><img onclick="ouvrir2(),afficheimg3()" src="images/image-product-3-thumbnail.jpg" alt=""></li>
+                <li><img onclick="ouvrir2(),afficheimg4()" src="images/image-product-4-thumbnail.jpg" alt=""></li>
             </ul>
         </div>
         <div class="right">
@@ -88,13 +89,13 @@
                     <button class="moins" onclick="decrement(),prixtotal()"><img src="images/icon-minus.svg"
                             alt=""></button>
                     <p class="counting"></p>
-                    <button class="plus" onclick="increment(),prixtotal()"><img src="/images/icon-plus.svg"
+                    <button class="plus" onclick="increment(),prixtotal()"><img src="images/icon-plus.svg"
                             alt=""></button>
                 </div>
                 <div class="ajoutée2">
                     <button type="submit" class="ajoutée"
                         onclick="ouvriritem(),fermezitem2(),prixtotal(),ouvrircheckout()"><img
-                            src="/images/icon-cart.svg" alt="">
+                            src="images/icon-cart.svg" alt="">
                         <p>Add to cart</p>
                     </button>
                 </div>
@@ -108,7 +109,7 @@
         <div class="panieritem">
             <div class="article1">
                 <div class='article1-img'>
-                    <img src="/images/image-product-1-thumbnail.jpg" alt="">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="">
                 </div>
                 <div class="article1-text">
                     <p>Fall Limted Edition sneakers</p>
@@ -118,7 +119,7 @@
                         <p class="prixtotal"></p>
                         <p>$</p>
                         <img class='trash' onclick="fermezitem(),ouvriritem2(),fermezcheckout()"
-                            src="/images/icon-delete.svg" alt="">
+                            src="images/icon-delete.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -134,37 +135,37 @@
     </div>
     <div class="fullsizeimg1">
         <div id="galery">
-            <img class="image1" src="/images/image-product-1.jpg" alt="">
-            <img class="image2" src="/images/image-product-2.jpg" alt="">
-            <img class="image3" src="/images/image-product-3.jpg" alt="">
-            <img class="image4" src="/images/image-product-4.jpg" alt="">
+            <img class="image1" src="images/image-product-1.jpg" alt="">
+            <img class="image2" src="images/image-product-2.jpg" alt="">
+            <img class="image3" src="images/image-product-3.jpg" alt="">
+            <img class="image4" src="images/image-product-4.jpg" alt="">
         </div>
         <div class="flechegauche" id="prev">
-            <img src="/images/icon-previous.svg" alt="">
+            <img src="images/icon-previous.svg" alt="">
         </div>
         <div class="flechedroite" id="next">
-            <img src="/images/icon-next.svg" alt="">
+            <img src="images/icon-next.svg" alt="">
         </div>
         <div class='close'>
-            <img onclick="fermez2()" src="/images/icon-close.svg" alt="">
+            <img onclick="fermez2()" src="images/icon-close.svg" alt="">
         </div>
         <div class="image-bottom">
             <div>
-                <img id="img1" src="/images/image-product-1-thumbnail.jpg" alt="">
+                <img id="img1" src="images/image-product-1-thumbnail.jpg" alt="">
             </div>
             <div>
-                <img id="img2" src="/images/image-product-2-thumbnail.jpg" alt="">
+                <img id="img2" src="images/image-product-2-thumbnail.jpg" alt="">
             </div>
             <div>
-                <img id="img3" src="/images/image-product-3-thumbnail.jpg" alt="">
+                <img id="img3" src="images/image-product-3-thumbnail.jpg" alt="">
             </div>
             <div>
-                <img id="img4" src="/images/image-product-4-thumbnail.jpg" alt="">
+                <img id="img4" src="images/image-product-4-thumbnail.jpg" alt="">
             </div>
         </div>
     </div>
     <div class="list-mobile">
-        <img onclick="fermez3()" class="close-nav" src="/images/icon-close.svg" alt="">
+        <img onclick="fermez3()" class="close-nav" src="images/icon-close.svg" alt="">
         <ul role="list" class="list">
             <a href="">
                 <li> Collections</li>
@@ -184,7 +185,7 @@
         </ul>
 
     </div>
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
