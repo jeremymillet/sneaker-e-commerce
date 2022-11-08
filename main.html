@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mobil css.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    </style>
+    <title>sneaker</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-mobile">
+            <button onclick="ouvrir3()">
+                <img src="/images/icon-menu.svg" alt="">
+            </button>
+        </div>
+        <div class="logo">
+            <img src="/images/logo.svg" alt="logo de la boutique sneakers">
+        </div>
+        <div class="nav">
+            <ul role="list">
+                <a href="">
+                    <li> Collections</li>
+                </a>
+                <a href="">
+                    <li>Men</li>
+                </a>
+                <a href="">
+                    <li>Women</li>
+                </a>
+                <a href="">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+        <div class="panier">
+            <img class="panier2" src="images/icon-cart.svg" alt="cart icon">
+        </div>
+        <div class="profil">
+            <a href=""><img src="/images/image-avatar.png" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <div class="photo1">
+                <img onclick="ouvrir2(),afficheimg1()" src="/images/image-product-1.jpg" alt="">
+            </div>
+            <ul class="listphoto">
+                <li><img onclick="ouvrir2(),afficheimg1()" src="/images/image-product-1-thumbnail.jpg" alt=""></li>
+                <li><img onclick="ouvrir2(),afficheimg2()" src="/images/image-product-2-thumbnail.jpg" alt=""></li>
+                <li><img onclick="ouvrir2(),afficheimg3()" src="/images/image-product-3-thumbnail.jpg" alt=""></li>
+                <li><img onclick="ouvrir2(),afficheimg4()" src="/images/image-product-4-thumbnail.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="titre">
+                <h2>SNEAKER COMPANY</h2>
+            </div>
+            <div class="nom">
+                <H1>Fall Limited Edition Sneakers</H1>
+            </div>
+            <div class="texte">
+                <p>These low-ptrofil sneakers are your perfect casual wear companion.Featuring a durable rubber cuter
+                    sole,they'ill withsand everything the weather can offer.</p>
+            </div>
+            <div class="price">
+                <div class="pourcent">
+                    <p class="prix">$125.00</p>
+                    <p class="fifthy">50%</p>
+                </div>
+                <div class="price-off">
+                    <p>$250.00</p>
+                </div>
+            </div>
+            <div class="price-off-pc">
+                <p>$250.00</p>
+            </div>
+            <div class="button-contenaire">
+                <div class="button">
+                    <button class="moins" onclick="decrement(),prixtotal()"><img src="images/icon-minus.svg"
+                            alt=""></button>
+                    <p class="counting"></p>
+                    <button class="plus" onclick="increment(),prixtotal()"><img src="/images/icon-plus.svg"
+                            alt=""></button>
+                </div>
+                <div class="ajoutée2">
+                    <button type="submit" class="ajoutée"
+                        onclick="ouvriritem(),fermezitem2(),prixtotal(),ouvrircheckout()"><img
+                            src="/images/icon-cart.svg" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="panier-overlay">
+        <header class="cart">
+            <h1 class="titrepanier">Cart</h1>
+        </header>
+        <div class="panieritem">
+            <div class="article1">
+                <div class='article1-img'>
+                    <img src="/images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="article1-text">
+                    <p>Fall Limted Edition sneakers</p>
+                    <div class="text-prix">
+                        <p>$125.00x</p>
+                        <p class="counting2"></p>
+                        <p class="prixtotal"></p>
+                        <p>$</p>
+                        <img class='trash' onclick="fermezitem(),ouvriritem2(),fermezcheckout()"
+                            src="/images/icon-delete.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <p class="text-vide"> Your cart is empty</p>
+            <div class="checkout">
+                <button type="submit">
+                    <p>Checkout</p>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="fullsizeimg1">
+        <div id="galery">
+            <img class="image1" src="/images/image-product-1.jpg" alt="">
+            <img class="image2" src="/images/image-product-2.jpg" alt="">
+            <img class="image3" src="/images/image-product-3.jpg" alt="">
+            <img class="image4" src="/images/image-product-4.jpg" alt="">
+        </div>
+        <div class="flechegauche" id="prev">
+            <img src="/images/icon-previous.svg" alt="">
+        </div>
+        <div class="flechedroite" id="next">
+            <img src="/images/icon-next.svg" alt="">
+        </div>
+        <div class='close'>
+            <img onclick="fermez2()" src="/images/icon-close.svg" alt="">
+        </div>
+        <div class="image-bottom">
+            <div>
+                <img id="img1" src="/images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+            <div>
+                <img id="img2" src="/images/image-product-2-thumbnail.jpg" alt="">
+            </div>
+            <div>
+                <img id="img3" src="/images/image-product-3-thumbnail.jpg" alt="">
+            </div>
+            <div>
+                <img id="img4" src="/images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="list-mobile">
+        <img onclick="fermez3()" class="close-nav" src="/images/icon-close.svg" alt="">
+        <ul role="list" class="list">
+            <a href="">
+                <li> Collections</li>
+            </a>
+            <a href="">
+                <li>Men</li>
+            </a>
+            <a href="">
+                <li>Women</li>
+            </a>
+            <a href="">
+                <li>About</li>
+            </a>
+            <a href="">
+                <li>Contact</li>
+            </a>
+        </ul>
+
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
